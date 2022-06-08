@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -22,6 +23,12 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    text-align: center;
+    scrollbar-width: 0px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 header {
@@ -30,6 +37,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #222831;
+    scroll-behavior: smooth;
 }
 
 .line {
@@ -41,6 +49,7 @@ header {
 
 header > nav {
     display: flex;
+    scroll-behavior: smooth;
 }
 
 header > nav > a {
@@ -49,7 +58,7 @@ header > nav > a {
     font-family: var(--font-style-2);
     font-size: var(--font-size-1);
     font-weight: 400;
-    padding: .8rem;
+    padding: .8rem; 
 }
 
 header > nav > a:hover {
@@ -70,24 +79,32 @@ main {
     filter: drop-shadow(0px 0px 5px #000);
 }
 
-h1 {
-    font-family: var(--font-style-1);
+strong {
+    background: var(--color-1);
+    padding: .1em .5em .1em .5em;
+    border-radius: 5px;
+}
+
+h1, h2, li, p {
     color: var(--color-4);
+    line-height: 1.3em;
+}
+
+h1, h2 {
+    font-family: var(--font-style-1);
     text-shadow: #000 0px 0px 5px;
+}
+
+h1 {
     font-size: var(--font-size-3);
 }
 
 h2 {
-    font-family: var(--font-style-1);
-    color: var(--color-4);
-    text-shadow: #000 0px 0px 5px;
     font-size: var(--font-size-2);
 }
 
 p {
-    text-align: center;
     padding: .2rem;
-    color: var(--color-4);
     font-family: var(--font-style-2);
 }
 
@@ -98,8 +115,7 @@ ul {
 }
 
 li {
-    color: var(--color-4);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--font-style-1);
     text-align: center;
 }
 
@@ -107,7 +123,7 @@ footer {
     display: flex;
     justify-content: center;
     background: var(--color-1);
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 }

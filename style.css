@@ -63,7 +63,7 @@ main {
     align-items: center;
 }
 
-#profileImage {
+.profileImage {
     width: 20rem;
     border-radius: 10%;
     margin-top: 1.8rem;

@@ -5,10 +5,11 @@
 }
 
 :root {
-    --color-1: #222831;
-    --color-2: #393E46;
-    --color-3: #00ADB5;
-    --color-4: #DDDDDD;
+    --dark-1: #343434;
+    --dark-2: #101019;
+    --dark-3: #30303f;
+    --dark-4: #B9D2D2;
+    --font-dark:#DDDDDD;
 
     --font-size-1: 1.2em;
     --font-size-2: 1.4em;
@@ -19,7 +20,7 @@
 }
 
 body {
-    background: var(--color-2);
+    background: var(--dark-2);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -34,15 +35,19 @@ body::-webkit-scrollbar {
 header {
     display: flex;
     flex-direction: row;
+    height: 8vh;
     justify-content: center;
     align-items: center;
-    background-color: #222831;
+    background: var(--dark-1);
     scroll-behavior: smooth;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .line {
     height: 1px;
-    background: var(--color-4);
+    background: var(--font-dark);
     flex: 1;
     margin-inline: .8rem;
 }
@@ -54,7 +59,7 @@ header > nav {
 
 header > nav > a {
     text-decoration: none;
-    color: var(--color-4);
+    color: var(--font-dark);
     font-family: var(--font-style-2);
     font-size: var(--font-size-1);
     font-weight: 400;
@@ -72,21 +77,42 @@ main {
     align-items: center;
 }
 
+section {
+    height: 84vh;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.down {
+    align-self: center;
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    filter: opacity(.5);
+}
+
+.down:hover {
+    filter: opacity(.8);
+}
+
 .profileImage {
-    width: 20rem;
-    border-radius: 10%;
-    margin-top: 1.8rem;
-    filter: drop-shadow(0px 0px 5px #000);
+    width: 14rem;
+    margin: 1.8rem;
+    filter: drop-shadow(0px 0px 5px #171010);
 }
 
 strong {
-    background: var(--color-1);
+    background: var(--dark-3);
     padding: .1em .5em .1em .5em;
     border-radius: 5px;
 }
 
 h1, h2, li, p {
-    color: var(--color-4);
+    color: var(--font-dark);
     line-height: 1.3em;
 }
 
@@ -122,8 +148,9 @@ li {
 footer {
     display: flex;
     justify-content: center;
-    background: var(--color-1);
-    position: relative;
+    height: 8vh;
+    background: var(--dark-1);
+    position: sticky;
     bottom: 0;
     width: 100%;
 }

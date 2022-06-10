@@ -16,45 +16,50 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <header>
+  <body id="home">
+    <header >
       <span class="line"></span>
       <nav>
-        <a href="#profileImage">Sobre mim</a>
+        <a href="#home">Sobre mim</a>
         <a href="#skills">Minhas habilidades</a>
         <a href="#contacts">Contatos</a>
       </nav>
       <span class="line"></span>
     </header>
     <main>
-      <a href="./images/profile.jpg">
-        <img
-          src="./images/profile.jpg"
-          alt="Foto do dono do portfólio"
-          id="profileImage"
-          class="profileImage"
-        />
-      </a>
-      <h1>Marcos Vinicios Kern Goulart</h1>
-      <p>
-        Olá, esse texto é para você me conhecer um pouco melhor!
-        <br />
-        Me chamo
-        <strong>Marcos</strong>
-        , tenho
-        <strong>21 anos</strong>
-        , sou do
-        <strong>Rio Grande do Sul</strong> <br>
-        e acredito que nunca é tarde para mudar de vida.
-      </p>
-      <ul id="skills">
-        <h2>Habilidades pessoais</h2>
-        <li><strong>Sair da zona de conforto</strong></li>
-        <li>Extrovertido</li>
-        <li>Resolução de problemas</li>
-        <li>Proativo</li>
-        <li>Trabalho em equipe</li>
-      </ul>
+      <section class="infos">
+        <a href="./images/profile.jpg">
+          <img
+            src="./images/profile.jpg"
+            alt="Foto do dono do portfólio"
+            id="profileImage"
+            class="profileImage"
+          />
+        </a>
+        <h1>Marcos Vinicios Kern Goulart</h1>
+        <p>
+          Olá, esse texto é para você me conhecer um pouco melhor!
+          <br />
+          Me chamo
+          <strong>Marcos</strong>
+          , tenho
+          <strong>21 anos</strong>
+          , sou do
+          <strong>Rio Grande do Sul</strong> <br>
+          e acredito que nunca é tarde para mudar de vida.
+        </p>
+        <a href="#skills" class="down"><img src="./assets/svg.svg" alt="Proxima pagina"></a>
+      </section>
+      <section  id="skills">
+        <ul>
+          <h2>Habilidades pessoais</h2>
+          <li><strong>Sair da zona de conforto</strong></li>
+          <li>Extrovertido</li>
+          <li>Resolução de problemas</li>
+          <li>Proativo</li>
+          <li>Trabalho em equipe</li>
+        </ul>
+      </section>
     </main>
     <footer>
       <a href="https://github.com/MarcosKern" target="_blank">

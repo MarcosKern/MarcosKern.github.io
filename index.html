@@ -21,59 +21,37 @@
   </head>
   <body>
     <main  id="home">
-      <header class="display-flex-row">
+      <header class="display-flex header">
         <nav class="nav">
-          <a href="#home">Inicio</a>
-          <a href="#about-me">Sobre mim</a>
+          <a href="#home">Sobre mim</a>
           <a href="#skills">Habilidades</a>
           <a href="#projects">Meus projetos</a>
         </nav>
       </header>
-      <section class="container-sm py-5">
+      <section class="container-sm py-5 display-flex presentation">
         <h1>Olá, eu me chamo <strong>Marcos!</strong><span class="bar">|</span></h1>
         <p class="ms-3">E criei este site usando HTML, CSS, JS e Bootstrap.</p>
+        <div class="display-flex">
+          <p class="about-me">
+            Esse é meu site de apresentação para você me conhecer um pouco melhor. Me chamo <strong>
+            Marcos Vinicios Kern Goulart</strong>, tenho <strong>24 anos</strong> e sou estudante e desenvolvedor WEB à aproximadamente 1 ano.
+            <br>
+            Compenso a falta de experiencias profissionais com muita dedicação aos estudos e simulações de projetos para clientes ficticios criados por mim ou por terceiros.
+            <br>
+            A principal finalidade desta pagina, além de me apresentar, é ser o lugar onde disponho meus projetos e ao mesmo tempo ponho em pratica meus conhecimentos até esse momento.
+          </p>
+          <div class="art">
+
+          </div>
+        </div>
+        <div class="decoration"></div>
       </section>
-      <section id="about-me"  class="container-sm py-5 display-flex-row">
-        <p class="about-me fs-5">
-          Esse é meu site de apresentação para você me conhecer um pouco melhor. Me chamo <strong>
-          Marcos Vinicios Kern Goulart</strong>, tenho <strong>24 anos</strong> e sou estudante e desenvolvedor WEB à aproximadamente 1 ano.
-          <br>
-          Compenso a falta de experiencias profissionais com muita dedicação aos estudos e simulações de projetos para clientes ficticios criados por mim ou por terceiros.
-        </p>
-        <div class="art">
+      <section id="skills" class="skills">
+        <div id="img-carousel">
 
         </div>
-      </section>
-      <section id="skills">
-        <div id="skills-carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://img.icons8.com/color/480/000000/css3.png" class="d-block"/>
-            </div>
-            <div class="carousel-item">
-              <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" class="d-block"/>
-            </div>
-            <div class="carousel-item">
-              <img src="https://img.icons8.com/color/480/000000/javascript--v1.png" class="d-block"/>
-            </div>
-            <div class="carousel-item">
-              <img src="https://img.icons8.com/color/480/000000/bootstrap.png" class="d-block"/>
-            </div>
-            <div class="carousel-item">
-              <img src="https://img.icons8.com/color/480/000000/git.png" class="d-block"/>
-            </div>
-            <div class="carousel-item">
-              <img src="https://img.icons8.com/ios-glyphs/480/000000/github.png" class="d-block"/>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#skills-carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#skills-carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <div id="description-carousel">
+
         </div>
       </section>
       <section id="projects">
@@ -85,5 +63,6 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

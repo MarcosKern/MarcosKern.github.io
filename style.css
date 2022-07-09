@@ -32,6 +32,19 @@
     text-align: justify;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-1);
+    scroll-behavior: smooth;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
 .art {
     flex: 1;
 }
@@ -101,6 +114,7 @@ section {
     position: relative;
 }
 
+
 @keyframes blink {
     0% {
         visibility: hidden;
@@ -148,3 +162,8 @@ section {
         height: auto;
     }
 }
+
+footer > a:hover {
+    filter: brightness(.6);
+}
+

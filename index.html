@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The cube</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/colorsSwitch.css">
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <main id="display">
@@ -14,13 +15,20 @@
             <img src="./images/icons8-react-native.svg" alt="" />
           </div>
           <div class="side back">
-            <button id="theme-toggle"><span></span></button>
+              <button id="theme-toggle"><span></span></button>
           </div>
           <div class="side bottom">
-            <img src="./images/icons8-html.svg" alt="" />
+            <img src="./images/icons8-js.svg" alt="" />
           </div>
           <div class="side right">
-            <img src="./images/icons8-js.svg" alt="" />
+            <input type="radio" id="orange" value="orange" name="color-switch">
+            <label for="orange" class="radio-label"><span></span></label>
+            <input type="radio" id="purple" value="purple" name="color-switch">
+            <label for="purple" class="radio-label"><span></span></label>
+            <input type="radio" id="green" value="green" name="color-switch">
+            <label for="green" class="radio-label"><span></span></label>
+            <input type="radio" id="blue" value="blue" name="color-switch">
+            <label for="blue" class="radio-label"><span></span></label>
           </div>
           <div class="side left">
             <img src="./images/icons8-nodejs.svg" alt="" />
@@ -32,6 +40,7 @@
       </div>
     </main>
     <script src="./services/cubeMovement.js"></script>
+    <script src="./services/colorSwitch.js"></script>
     <script src="./services/themeTogle.js"></script>
   </body>
 </html>

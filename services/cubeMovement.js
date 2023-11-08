@@ -5,11 +5,6 @@ let actualPositionY = 0;
 let clickPositionX = 0;
 let clickPositionY = 0;
 
-function setClickPositon({ clientX, clientY }) {
-  clickPositionX = clientX;
-  clickPositionY = clientY;
-}
-
 function cubeRotation({ clientX, clientY }) {
   if (clickPositionX < clientX) {
     actualPositionX += 3;
@@ -29,6 +24,7 @@ function cubeRotation({ clientX, clientY }) {
 }
 
 function move(event) {
+  event.preventDefault()
   switch (event.type) {
     case "touchmove":
       return cubeRotation(event.changedTouches[0]);
@@ -53,8 +49,5 @@ function remove() {
 
 display.addEventListener("mousedown", drag);
 display.addEventListener("touchstart", touchDrag);
-display.addEventListener("mousedown", setClickPositon);
-display.addEventListener("touchstart", setClickPositon);
 display.addEventListener("mouseup", remove);
-display.addEventListener("touchend", remove);
 display.addEventListener("mouseleave", remove);
